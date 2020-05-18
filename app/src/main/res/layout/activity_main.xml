@@ -14,8 +14,8 @@
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"
-        app:navermap_latitude="37.321428"
-        app:navermap_longitude="127.126595"
+        app:navermap_latitude="37.579779"
+        app:navermap_longitude="126.977041"
         app:navermap_zoom="16"
         />
 

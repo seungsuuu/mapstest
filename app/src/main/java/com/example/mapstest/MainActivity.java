@@ -45,10 +45,10 @@ public class MainActivity extends AppCompatActivity
 
         }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode,
+        @Override
+        public void onRequestPermissionsResult(int requestCode,
                                            @NonNull String[] permissions, @NonNull int[] grantResults) {
-        if (locationSource.onRequestPermissionsResult(
+            if (locationSource.onRequestPermissionsResult(
                 requestCode, permissions, grantResults)) {
             if (!locationSource.isActivated()) { // 권한 거부됨
                 naverMap.setLocationTrackingMode(LocationTrackingMode.None);
@@ -71,11 +71,10 @@ public class MainActivity extends AppCompatActivity
                     Toast.LENGTH_SHORT).show(); */
 
             // 사용자 인터페이스 설정
-            UiSettings uiSettings = naverMap.getUiSettings();
-            uiSettings.setCompassEnabled(true);
-            uiSettings.setLocationButtonEnabled(true);
-            //기울기 변경 허용
-            uiSettings.setRotateGesturesEnabled(true);
+            UiSettings uiSettings = naverMap.getUiSettings(); //ui 셋팅 선언
+            uiSettings.setCompassEnabled(true); // 나침반 인터페이스 허용
+            uiSettings.setLocationButtonEnabled(true); // 사용자 위치 버튼 허용
+            uiSettings.setRotateGesturesEnabled(true); // 기울기 변경 허용
 
             // 클릭시 위도와 경도 정보 토스트로 나타냄
             naverMap.setOnMapClickListener((point, coord) ->
@@ -85,11 +84,11 @@ public class MainActivity extends AppCompatActivity
             this.naverMap = naverMap;
             naverMap.setLocationSource(locationSource);
 
-            naverMap.setLocationTrackingMode(LocationTrackingMode.Follow);
+            //naverMap.setLocationTrackingMode(LocationTrackingMode.Follow);
 
             LocationOverlay locationOverlay = naverMap.getLocationOverlay();
             locationOverlay.setVisible(true);
-            locationOverlay.setPosition(new LatLng(37.5670135, 126.9783740));
+            //locationOverlay.setPosition(new LatLng(37.5670135, 126.9783740));
             locationOverlay.setCircleRadius(100);
             //locationOverlay.setIcon(OverlayImage.fromResource(R.drawable.location_overlay_icon));
         }
