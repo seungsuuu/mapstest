@@ -19,7 +19,7 @@ import com.naver.maps.map.UiSettings;
 import com.naver.maps.map.overlay.LocationOverlay;
 import com.naver.maps.map.overlay.OverlayImage;
 import com.naver.maps.map.util.FusedLocationSource;
-//
+
 public class MainActivity extends AppCompatActivity
       implements OnMapReadyCallback {
 
