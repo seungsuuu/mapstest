@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity
             this.naverMap = naverMap;
             naverMap.setLocationSource(locationSource);
 
-            //naverMap.setLocationTrackingMode(LocationTrackingMode.Follow);
+            naverMap.setLocationTrackingMode(LocationTrackingMode.Follow);
 
             LocationOverlay locationOverlay = naverMap.getLocationOverlay();
             locationOverlay.setVisible(true);
@@ -93,7 +93,6 @@ public class MainActivity extends AppCompatActivity
             //locationOverlay.setIcon(OverlayImage.fromResource(R.drawable.location_overlay_icon));
         }
 
-
-
+//안녕하세요 여러분 0323 왜 안되냐고 0404 되라ㅁㄴㅇㅁㄴㅇㅁㄴㅁㄴㅇㅁㄴㅇㅁㄴ 안녕ㅁㄴㅇㅁㄴㅇㅁㅇㄴ
     }
 
