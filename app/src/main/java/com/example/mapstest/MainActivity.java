@@ -19,7 +19,7 @@ import com.naver.maps.map.UiSettings;
 import com.naver.maps.map.overlay.LocationOverlay;
 import com.naver.maps.map.overlay.OverlayImage;
 import com.naver.maps.map.util.FusedLocationSource;
-
+//fkfkfk
 public class MainActivity extends AppCompatActivity
       implements OnMapReadyCallback {
 
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
 
             locationSource =
                     new FusedLocationSource(this, LOCATION_PERMISSION_REQUEST_CODE);
-
+////
         }
 
     @Override
